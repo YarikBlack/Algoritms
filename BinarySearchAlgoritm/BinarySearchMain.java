@@ -1,7 +1,8 @@
 
-class Main{
+class BinarySearchMain{
     public static void main(String[] args){
         int item = 0;
+        int searchNumber = 40; // set a value of number that we want to find
         int [] massive = new int[101];
 
         BinarySeacrch binary = new BinarySeacrch();
@@ -12,8 +13,10 @@ class Main{
             item++;
         }
 
+        System.out.println("We looking for: " + searchNumber);
+
         // set massive to argument in search function
-        binary.search(massive, 30); // there is number that we looking for; you can set what you want to found
+        binary.search(massive, searchNumber); // set number that you want found here
         
         
         //get search result

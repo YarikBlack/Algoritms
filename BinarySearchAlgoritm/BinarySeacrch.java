@@ -1,16 +1,14 @@
 
 public class BinarySeacrch {
-    private int limit = 101;
     private int mid;
     
     int low = 0;
-    int high = limit - 1;
 
     int tries = 0;
 
     // method to binary search
     int search(int array[], int item){
-        
+        int high = array.length - 1;
 
         while(low <= high){
            mid = (low + high) / 2;
